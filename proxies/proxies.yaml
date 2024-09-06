@@ -1,0 +1,3 @@
+proxies:
+  - {name: "[ZJ] 🇦🇪 迪拜|河南移动| x1", server: cm01.uxvr.me, port: 10799, type: vmess, uuid: 147dee74-a40e-3c11-9ff0-3282cd8bdb3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ssrgr-ae01, headers: {Host: cm01.uxvr.me}}, udp: true}
+  - {name: "[VMess] 🇦🇷 阿根廷01|河南移动 x1", server: cm01.uxvr.me, port: 
