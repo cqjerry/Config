@@ -1,3 +1,211 @@
 proxies:
-  - {name: "[ZJ] 🇦🇪 迪拜|河南移动| x1", server: cm01.uxvr.me, port: 10799, type: vmess, uuid: 147dee74-a40e-3c11-9ff0-3282cd8bdb3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ssrgr-ae01, headers: {Host: cm01.uxvr.me}}, udp: true}
-  - {name: "[VMess] 🇦🇷 阿根廷01|河南移动 x1", server: cm01.uxvr.me, port: 
+# 支持的协议及加密算法示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/wiki/configuration
+
+# Shadowsocks(Websocket + TLS)
+ - name: "[ZJ] 🇩🇪 Akko"
+   type: ss
+   server: 185.217.108.187
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "yEmzmR9GR7eC"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇹🇼 AnyHK"
+   type: ss
+   server: anyhinet.shikura.xyz
+   port: 20970
+   udp: true
+   cipher: aes-128-gcm
+   password: "o3Ru0$oP2KqU"
+ - name: "[ZJ] 🇺🇸 Hostdare"
+   type: ss
+   server: 103.99.179.150
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "B3iFocwLwh"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇺🇸 DMIT"
+   type: ss
+   server: 154.17.29.165
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "B3iFocwLwh"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇺🇸 BWG"
+   type: ss
+   server: 74.211.104.132
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "wjIKGWyArYQl"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇺🇸 VPS"
+   type: ss
+   server: 146.19.116.197
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "EyZ65V3VWVip"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇭🇰 Coalcloud"
+   type: ss
+   server: 45.87.102.204
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "isrslkj7st1f"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇭🇰 Coalcloudzz"
+   type: ss
+   server: nat.i5cloud.com
+   port: 51004
+   udp: true
+   cipher: aes-128-gcm
+   password: "isrslkj7st1f"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇸🇬 ByteVirt"
+   type: ss
+   server: 89.28.239.65
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "E418sRhy2ko0"
+   plugin: obfs
+   plugin-opts:
+     mode: tls
+     host: mzstatic.com
+     OBFS-URI: /
+ - name: "[ZJ] 🇸🇬 Duocloud"
+   type: ss
+   server: 2a13:df80:7c80:0000:0000:0000:38ff:6b04
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "JUXxdlicShPi"
+ - name: "[ZJ] 🇭🇰 Duocloud"
+   type: ss
+   server: 2400:c620:0011:0000:0000:0000:4017:0154
+   port: 443
+   udp: true
+   cipher: aes-128-gcm
+   password: "6H7WwAM6Wlpb"
+           
+# Trojan
+ - name: "[ZJ] 🇯🇵 Oracle"
+   type: trojan
+   server: jp.dnsev.com
+   port: 443
+   password: "Dp4346xIWX"
+   udp: true
+   # sni: oracle.cqjerry.xyz # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇸🇬 Oracle"
+   type: trojan
+   server: sg.dnsev.com
+   port: 443
+   password: "bXLCLCy1Vp"
+   udp: true
+   # sni: oracle.cqjerry.xyz # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇭🇰 Greencloud"
+   type: trojan
+   server: ghk.dnsev.com
+   port: 443
+   password: "AgUMKRBYCh"
+   udp: true
+   # sni: oracle.cqjerry.xyz # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇺🇸 Oracle"
+   type: trojan
+   server: ous.dnsev.com
+   port: 443
+   password: "UxvfyBONQr"
+   udp: true
+   # sni: oracle.cqjerry.xyz # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇭🇰 Greencloudzz"
+   type: trojan
+   server: nat.i5cloud.com
+   port: 51003
+   password: "AgUMKRBYCh"
+   udp: true
+   sni: ghk.dnsev.com # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇰🇷 Oracle"
+   type: trojan
+   server: kr.dnsev.com
+   port: 443
+   password: "nEMenERk1y"
+   udp: true
+   # sni: oracle.cqjerry.xyz # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇭🇰 TX"
+   type: trojan
+   server: tx.dnsev.com
+   port: 443
+   password: "CCVUDnWaSb"
+   udp: true
+   # sni: ali.dnsev.com # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
+ - name: "[ZJ] 🇺🇸 Racknerd"
+   type: trojan
+   server: rack.dnsev.com
+   port: 20970
+   password: "hlozbLa3Rj"
+   udp: true
+   sni: rack.dnsev.com # aka server name
+   #  alpn:
+   #    - h2
+   #    - http/1.1
+   # skip-cert-verify: true
