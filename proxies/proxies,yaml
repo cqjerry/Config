@@ -1,2 +1,1 @@
-proxies:
-  - {name: '[ZJ] 🇸🇬 Bytevirt', server: 89.28.239.65, port: 443, type: ss, cipher: aes-128-gcm, password: E418sRhy2ko0, plugin: obfs, plugin-opts: {mode: tls, host: mzstatic.com}, udp: true}
+
