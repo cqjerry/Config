@@ -8,7 +8,7 @@
 		"servers": [
 			{
 				"tag": "default-dns",
-				"address": "223.5.5.5",
+				"address": "119.29.29.29",
 				"detour": "direct-out"
 			},
 			{
