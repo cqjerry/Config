@@ -56,3 +56,4 @@ payload:
   - DOMAIN-SUFFIX,tmecosys.com
   - DOMAIN-SUFFIX,sh.cmcc
   - DOMAIN-SUFFIX,hq.cmcc
+  - DOMAIN-KEYWORD,iill,DIRECT
